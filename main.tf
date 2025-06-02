@@ -34,7 +34,7 @@ locals {
               yum install -y nginx
               systemctl start nginx
               systemctl enable nginx
-              echo "<p>Instance A</p>" >> /usr/share/nginx/html/index.html
+              echo "<p>I am from Instance A</p>" >> /usr/share/nginx/html/index.html
           EOF
 
   user_data_b = <<-EOF
@@ -42,7 +42,7 @@ locals {
               yum install -y nginx
               systemctl start nginx
               systemctl enable nginx
-              echo "<p>Instance B</p>" >> /usr/share/nginx/html/index.html
+              echo "<p>I am from Instance B</p>" >> /usr/share/nginx/html/index.html
           EOF
 }
 
